@@ -1,21 +1,18 @@
 package Saucelab_Utilities;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
 public class propertyLoader {
-    public String propertyLoading(String in){
+    public String propertyLoading(String in) {
         FileInputStream fis = null;
         Properties locator = null;
         try {
             fis = new FileInputStream("src/main/java/Utilities/config.properties");
             locator = new Properties();
             locator.load(fis);
-        } catch(FileNotFoundException fnfe) {
-            fnfe.printStackTrace();
-        } catch(IOException ioe) {
+        } catch (IOException ioe) {
             ioe.printStackTrace();
         } finally {
             try {
@@ -23,9 +20,8 @@ public class propertyLoader {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-            String out= (String) locator.get(in);
-            return out;
         }
-
+        String out = (String) locator.get(in);
+        return out;
     }
 }
