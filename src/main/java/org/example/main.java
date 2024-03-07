@@ -1,6 +1,5 @@
 package org.example;
 
-import Utilities.utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class main  extends utilities {
+public class main extends utilities {
 
     WebDriver driver=null;
 

@@ -34,6 +34,7 @@
             <artifactId>selenium-chrome-driver</artifactId>
             <version>4.16.1</version>
         </dependency>
+
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chromium-driver</artifactId>
@@ -63,7 +64,7 @@
     </dependencies>
     <profiles>
         <profile>
-            <id>smoke</id>
+            <id>functional</id>
             <build>
                 <pluginManagement>
                     <plugins>
@@ -73,7 +74,7 @@
                             <version>3.0.0-M5</version>
                             <configuration>
                                 <suiteXmlFiles>
-                                    <suiteXmlFile>testng.xml</suiteXmlFile>
+                                    <suiteXmlFile>testng-functional.xml</suiteXmlFile>
                                 </suiteXmlFiles>
                             </configuration>
                         </plugin>
@@ -83,7 +84,7 @@
         </profile>
 
         <profile>
-            <id>saucelabdemo</id>
+            <id>regression</id>
             <build>
                 <pluginManagement>
                     <plugins>
@@ -93,7 +94,7 @@
                             <version>3.0.0-M5</version>
                             <configuration>
                                 <suiteXmlFiles>
-                                    <suiteXmlFile>testng-saucelab.xml</suiteXmlFile>
+                                    <suiteXmlFile>testng-regression.xml</suiteXmlFile>
                                 </suiteXmlFiles>
                             </configuration>
                         </plugin>
@@ -102,4 +103,5 @@
             </build>
         </profile>
     </profiles>
+
 </project>

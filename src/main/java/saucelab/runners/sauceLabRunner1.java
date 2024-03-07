@@ -1,17 +1,16 @@
-package Saucelab_Package;
+package saucelab.runners;
 
-import Saucelab_Utilities.functions;
+import saucelab.utilities.SauceFunctions;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class SauceDemo extends functions {
+public class sauceLabRunner1 extends SauceFunctions {
     WebDriver driver=null;
     @Test(description = "Login functionality")
     public void login() throws InterruptedException {
         driver=launchBrowser();
         launchPage(driver);
         loginPage(driver);
-        Thread.sleep(1000);
         driver.quit();
     }
 
@@ -41,4 +40,8 @@ public class SauceDemo extends functions {
         confirmationPage(driver);
         driver.quit();
     }
+    public void sleep() throws InterruptedException {
+        Thread.sleep(3000);
+    }
+
 }

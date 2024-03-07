@@ -2,9 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="suite">
     <test name="test">
-        <parameter name="Browser" value="firefox"> </parameter>
         <classes>
-            <class name="Saucelab_Package.SauceDemo">
+            <class name="saucelab.runners.sauceLabRunner2">
             </class>
         </classes>
     </test>
