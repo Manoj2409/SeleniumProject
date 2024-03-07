@@ -2,6 +2,8 @@ A simple test project that can be used to pull this code via jenkins. And this p
 
 Languages used: Java
 
+Testing framework: Selenium
+
 Build tool: Maven
 
 Test runner: TestNG
