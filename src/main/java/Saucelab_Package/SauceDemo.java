@@ -8,7 +8,7 @@ public class SauceDemo extends functions {
     WebDriver driver=null;
     @Test(description = "Login functionality")
     public void login() throws InterruptedException {
-        driver = launchBrowser();
+        driver=launchBrowser();
         launchPage(driver);
         loginPage(driver);
         Thread.sleep(1000);
@@ -30,7 +30,7 @@ public class SauceDemo extends functions {
 
     @Test(description = "add and remove functionality")
     public void add_and_remove_functionality() throws InterruptedException {
-        driver= launchBrowser();
+        driver = launchBrowser();
         launchPage(driver);
         loginPage(driver);
         selectingItems(driver);

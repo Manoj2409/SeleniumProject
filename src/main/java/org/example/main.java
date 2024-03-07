@@ -1,19 +1,26 @@
 package org.example;
 
+import Utilities.utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
+public class main  extends utilities {
 
-public class Main {
+    WebDriver driver=null;
 
-
-    public static void main(String[] args) throws InterruptedException {
-        WebDriver driver;
+    @BeforeTest
+    public void initializeBrowser() {
+        driver=browserLoader(propertyLoader("browser"));
+    }
+    @Test
+    public void test() throws InterruptedException {
+        /*WebDriver driver;
         System.setProperty("webdriver.gecko.driver","src/main/resources/geckodriver");
-        driver= new FirefoxDriver();
+        driver= new FirefoxDriver();*/
         driver.manage().window().maximize();
         driver.get("https://demoqa.com");
         Thread.sleep(1000);
@@ -61,7 +68,6 @@ public class Main {
 
 
         Thread.sleep(2000);
-        driver.close();
         driver.quit();
     }
 

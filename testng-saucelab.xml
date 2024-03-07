@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite">
+    <test name="test">
+        <parameter name="Browser" value="firefox"> </parameter>
+        <classes>
+            <class name="Saucelab_Package.SauceDemo">
+            </class>
+        </classes>
+    </test>
+</suite>

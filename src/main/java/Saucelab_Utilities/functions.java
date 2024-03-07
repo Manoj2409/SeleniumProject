@@ -17,14 +17,15 @@ public class functions implements Locators {
         return launchBrowser(browser);
     }
 
-    public WebDriver launchBrowser(String browser){
+
+    public WebDriver launchBrowser(String Browser){
         WebDriver driver=null;
-        if(browser.equalsIgnoreCase("firefox")){
+        if(Browser.equalsIgnoreCase("firefox")){
             System.setProperty("webdriver.gecko.driver","src/main/resources/geckodriver");
             driver= new FirefoxDriver();
         }
-        if(browser.equalsIgnoreCase("msedge")){
-            System.setProperty("webdriver.gecko.driver","src/main/resources/msedgedriver");
+        if(Browser.equalsIgnoreCase("msedge")){
+            System.setProperty("webdriver.msedge.driver","src/main/resources/msedgedriver");
             driver= new EdgeDriver();
         }
         return driver;
