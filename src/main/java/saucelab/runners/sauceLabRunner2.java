@@ -9,8 +9,11 @@ public class sauceLabRunner2 extends SauceFunctions {
     @Test(description = "Regression - Login functionality")
     public void login() throws InterruptedException {
         driver=launchBrowser();
-        launchPage(driver);
-        loginPage(driver);
+        launchPage(driver);sleep();
+        loginPage(driver);sleep();
         driver.quit();
+    }
+    public void sleep() throws InterruptedException {
+       // Thread.sleep(3000);
     }
 }

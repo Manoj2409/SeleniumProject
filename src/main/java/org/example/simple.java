@@ -2,9 +2,9 @@ package org.example;
 
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -16,10 +16,25 @@ public class simple extends utilities {
     @BeforeTest
     public void beforeTest(){
         //browser configuration
-        driver=browserLoader(propertyLoader("browser"));
+        System.setProperty("webdriver.gecko.driver","src/main/resources/geckodriver");
+        driver=new FirefoxDriver();
         driver.manage().window().maximize();
+
     }
-    @Test(priority = 1)
+    @Test
+    public void test3() throws InterruptedException {
+        driver.get("https://demoqa.com/");
+        Thread.sleep(1000);
+        WebElement framesIcon= driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[3]/div/div[2]"));
+        framesIcon.click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[contains(text(),'Frames')]")).click();
+        Thread.sleep(1000);
+        driver.switchTo().frame(0);
+        driver.findElement(By.xpath("//*[contains(text(),'This is a sample page')]")).click();
+        Thread.sleep(100);
+    }
+    /*@Test(priority = 1)
     public void test() throws InterruptedException {
         driver.get("https://demoqa.com/");
         Thread.sleep(1000);
@@ -68,7 +83,7 @@ public class simple extends utilities {
         System.out.println(RadioYesCheck.getText());
 
         Thread.sleep(2000);
-    }
+    }*/
     @AfterTest
     public void afterTest(){
         driver.quit();

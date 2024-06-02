@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class sauceLabRunner1 extends SauceFunctions {
     WebDriver driver=null;
-    @Test(description = "Login functionality")
+    @Test(priority = 1 ,description = "Login functionality")
     public void login() throws InterruptedException {
         driver=launchBrowser();
         launchPage(driver);
@@ -14,7 +14,7 @@ public class sauceLabRunner1 extends SauceFunctions {
         driver.quit();
     }
 
-    @Test(description = "Add to cart functionality")
+    @Test(priority = 2 ,description = "Add to cart functionality")
     public void add_to_cart_functionality() throws InterruptedException {
         driver = launchBrowser();
         launchPage(driver);
@@ -27,7 +27,7 @@ public class sauceLabRunner1 extends SauceFunctions {
         driver.quit();
     }
 
-    @Test(description = "add and remove functionality")
+    @Test(priority = 3,description = "add and remove functionality")
     public void add_and_remove_functionality() throws InterruptedException {
         driver = launchBrowser();
         launchPage(driver);
@@ -41,7 +41,7 @@ public class sauceLabRunner1 extends SauceFunctions {
         driver.quit();
     }
     public void sleep() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(0);
     }
 
 }

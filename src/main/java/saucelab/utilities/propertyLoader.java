@@ -16,12 +16,6 @@ public class propertyLoader {
             locator.load(fis);
         } catch (IOException ioe) {
             ioe.printStackTrace();
-        } finally {
-            try {
-                fis.close();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
         }
         String out = (String) locator.get(in);
         return out;
@@ -35,12 +29,6 @@ public class propertyLoader {
             locator.load(fis);
         } catch (IOException ioe) {
             ioe.printStackTrace();
-        } finally {
-            try {
-                fis.close();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
         }
         String out = (String) locator.get(in);
         return out;
@@ -55,12 +43,6 @@ public class propertyLoader {
             locator.load(fis);
         } catch (IOException ioe) {
             ioe.printStackTrace();
-        } finally {
-            try {
-                fis.close();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
         }
         assert locator != null;
         String out = (String) locator.get(in);

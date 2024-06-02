@@ -15,7 +15,7 @@ public class main extends utilities {
     public void initializeBrowser() {
         driver=browserLoader(propertyLoader("browser"));
     }
-    @Test
+    //@Test
     public void test() throws InterruptedException {
         /*WebDriver driver;
         System.setProperty("webdriver.gecko.driver","src/main/resources/geckodriver");
@@ -68,6 +68,16 @@ public class main extends utilities {
 
         Thread.sleep(2000);
         driver.quit();
+    }
+
+    @Test
+    public void test2() throws InterruptedException {
+        driver.manage().window().maximize();
+        driver.get("https://demoqa.com");
+        Thread.sleep(1000);
+        WebElement a=driver.findElement(By.xpath("//*[@id='app']/div/div/div[2]/div/div[1]/div/div[3]/h5"));
+        a.click();
+        Thread.sleep(1000);
     }
 
 }

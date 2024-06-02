@@ -2,6 +2,7 @@ package saucelab.utilities;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,9 +24,13 @@ public class functions extends propertyLoader{
             System.setProperty("webdriver.gecko.driver","src/main/resources/geckodriver");
             driver= new FirefoxDriver();
         }
-        if(Browser.equalsIgnoreCase("msedge")){
+        else if(Browser.equalsIgnoreCase("msedge")){
             System.setProperty("webdriver.msedge.driver","src/main/resources/msedgedriver");
             driver= new EdgeDriver();
+        }
+        else {
+            System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver");
+            driver= new ChromeDriver();
         }
         return driver;
     }
