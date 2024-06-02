@@ -1,0 +1,24 @@
+{
+    "employees":[
+        {
+            "id":1,
+            "first_name":"Manoj",
+            "last_name":"Thiyagarajan",
+            "email":"dummymail@gmail.com"
+        },
+        {
+
+            "id":2,
+            "first_name":"John",
+            "last_name":"Xi",
+            "email":"john@gmail.com"
+        },
+        {
+            "id":3,
+            "first_name":"Pravin",
+            "last_name":"Raj",
+            "email":"Pravin@gmail.com"
+        }
+
+    ]
+}
