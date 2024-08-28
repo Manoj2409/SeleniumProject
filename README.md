@@ -1,11 +1,15 @@
-A simple test project that can be used to pull this code via jenkins. And this project can be used as reference who are trying to build the test suite in jenkins via maven profiles(in terminal we can trigger this project by using the profile id in pom.xml) using testng.xml files (Example: mvn clean test -Psaucelabdemo)
+**Project Overview**
 
-Languages used: Java
+This project serves as a reference implementation for setting up a test suite using Jenkins, Maven profiles, and TestNG. It demonstrates how to automate code deployment via Jenkins and provides a guide for those looking to build a similar test suite. The project can be triggered from the terminal using Maven profiles, as specified in the `pom.xml` file, and employs `testng-functional.xml` files to define test configurations (e.g., `mvn clean test -Pfunctional`).
 
-Testing framework: Selenium
+**Key Components**
 
-Build tool: Maven
+- **Programming Language:** Java
+- **Testing Framework:** Selenium
+- **Build Tool:** Maven
+- **Test Runner:** TestNG
+- **Continuous Integration Tool:** Jenkins
 
-Test runner: TestNG
+---
 
-Build tool: Jenkins
+If you need further customization or specific colors for sections, please let me know how you’d like them styled!
