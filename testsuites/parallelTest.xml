@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite" parallel="tests" thread-count="3">
+
+    <test name="test1">
+        <classes>
+            <class name="saucelab.runnersParallel.runner1">
+            </class>
+        </classes>
+    </test>
+
+    <test name="test2">
+        <classes>
+            <class name="saucelab.runnersParallel.runner2">
+            </class>
+        </classes>
+    </test>
+
+    <test name="test3">
+        <classes>
+            <class name="saucelab.runnersParallel.runner3">
+            </class>
+        </classes>
+    </test>
+</suite>
