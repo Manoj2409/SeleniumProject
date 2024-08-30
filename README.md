@@ -11,5 +11,3 @@ This project serves as a reference implementation for setting up a test suite us
 - **Continuous Integration Tool:** Jenkins
 
 ---
-
-If you need further customization or specific colors for sections, please let me know how you’d like them styled!
