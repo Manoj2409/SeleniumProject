@@ -1,5 +1,6 @@
 package saucelab.runners;
 
+import org.testng.annotations.BeforeTest;
 import saucelab.utilities.SauceFunctions;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
@@ -8,7 +9,7 @@ public class sauceLabRunner1 extends SauceFunctions {
     WebDriver driver=null;
     @Test(priority = 1 ,description = "Login functionality")
     public void login() throws InterruptedException {
-        driver=launchBrowser();
+        driver = launchBrowser();
         launchPage(driver);
         loginPage(driver);
         driver.quit();

@@ -2,23 +2,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="suite" parallel="tests" thread-count="3">
 
-    <test name="test1">
+    <test name="Login functionality">
         <classes>
-            <class name="saucelab.runnersParallel.runner1">
+            <class name="saucelab.testrunners.runner1">
             </class>
         </classes>
     </test>
 
-    <test name="test2">
+    <test name="Add to cart">
         <classes>
-            <class name="saucelab.runnersParallel.runner2">
+            <class name="saucelab.testrunners.runner2">
             </class>
         </classes>
     </test>
 
-    <test name="test3">
+    <test name="add and remove from cart and proceed to checkout">
         <classes>
-            <class name="saucelab.runnersParallel.runner3">
+            <class name="saucelab.testrunners.runner3">
             </class>
         </classes>
     </test>
