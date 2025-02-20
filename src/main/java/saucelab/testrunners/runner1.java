@@ -24,4 +24,3 @@ public class runner1 extends SauceFunctions {
         driver.quit();
     }
 }
-

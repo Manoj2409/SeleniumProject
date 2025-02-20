@@ -8,7 +8,7 @@ import java.time.Duration;
 
 public class SauceFunctions extends functions {
     public void sleeperMethod() throws InterruptedException {
-        //Thread.sleep(3000);
+        Thread.sleep(3000);
     }
 
     public void launchPage(WebDriver driver){
