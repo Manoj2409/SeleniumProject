@@ -3,21 +3,21 @@
 <suite name="suite">
     <test name="test1">
         <classes>
-            <class name="saucelab.testrunners.runner1">
+            <class name="saucelab.testrunners.loginpage.loginpage">
             </class>
         </classes>
     </test>
 
     <test name="test2">
         <classes>
-            <class name="saucelab.testrunners.runner2">
+            <class name="saucelab.testrunners.shoppingPage.addtocart">
             </class>
         </classes>
     </test>
 
     <test name="test3">
         <classes>
-            <class name="saucelab.testrunners.runner3">
+            <class name="saucelab.testrunners.shoppingPage.removefromcart">
             </class>
         </classes>
     </test>

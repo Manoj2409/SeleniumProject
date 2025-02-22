@@ -1,11 +1,11 @@
-package saucelab.testrunners;
+package saucelab.testrunners.shoppingPage;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import saucelab.utilities.SauceFunctions;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class runner2 extends SauceFunctions {
+public class addtocart extends SauceFunctions {
     WebDriver driver=null;
     @BeforeTest
     public void setup(){

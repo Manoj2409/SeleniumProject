@@ -4,21 +4,21 @@
 
     <test name="Login functionality">
         <classes>
-            <class name="saucelab.testrunners.runner1">
+            <class name="saucelab.testrunners.loginpage.loginpage">
             </class>
         </classes>
     </test>
 
     <test name="Add to cart">
         <classes>
-            <class name="saucelab.testrunners.runner2">
+            <class name="saucelab.testrunners.shoppingPage.addtocart">
             </class>
         </classes>
     </test>
 
     <test name="add and remove from cart and proceed to checkout">
         <classes>
-            <class name="saucelab.testrunners.runner3">
+            <class name="saucelab.testrunners.shoppingPage.removefromcart">
             </class>
         </classes>
     </test>
